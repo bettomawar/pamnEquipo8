@@ -1,0 +1,84 @@
+Bienvenidos a un tutorial de como documentar código en Java:
+
+La documentación en la programación es una forma de ayudar al
+lector u otros programadores a entender mejor el funcionamiento
+de nuestros códigos, además representa una buena práctica de
+programaciónm en Java se usa lo siguiente:
+
+->Al inicio del documento:
+
+/**
+*
+*	nombre_del_archivo.java
+*	
+*	Created on November 20, 2013, 17:30
+*/
+
+/**
+*
+*	@author	Nombre(s) de el(los) autor(es)  i.e. César Alberto Trejo Juárez
+*
+*/
+
+-> Constructor:
+
+/** Constructor por defecto  */
+
+
+-> Métodos:
+
+/**
+*	@param -> Donde lo anterior hace referencia a los parámetros que recibe la función
+*	@return -> Hace referencia al tipo de dato que regresa el método
+*	@exception -> Hace referencia a los errores que se generan en ejecucuión
+*	@since 1.0 -> Hace referencia a la versión del programa o clase
+*	@see  -> Sirve para rcomendar al programador a visitar un link o revisar más información
+*		en la referencia mencionada después de @see.
+*/
+
+Véase también http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=javadoc
+
+		http://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=646:documentar-proyectos-java-con-javadoc-comentarios-simbolos-tags-deprecated-param-etc-cu00680b&catid=68:curso-aprender-programacion-java-desde-cero&Itemid=188
+
+
+Un ejemplo de una clase bien documentada sería:
+
+/**
+*	example.java
+*	Created on November 20, 2013, 17:42
+*	
+*/
+
+/**
+*
+*	@author: Trejo Juárez César Alberto   cesaralberto at yandex.com
+*						cesaratj27 at gmail.com
+*						cesaratj27 at outlook.com
+*
+*
+*
+*
+*/
+
+public class example{
+
+	/**
+	*	Propiedades
+	*/
+	int x;
+	float d;
+
+	/**
+	*	Métodos
+	*/
+
+	/*
+	*	@param Nothing
+	*	@return void
+	*/
+	public void getName(){
+	}
+
+}
+
+
