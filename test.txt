@@ -1,2 +1,15 @@
-Hola Valeria y Jorge
+Hola compañeros
+
+En este repositorio deben de registrarse
+para poder modificar y actualizar códigos.
+Después de ello, cada uno debe generar un
+branch dónde dice: branch master
+Esto con la finalidad de que cada uno
+modifique lo que quiera en su branch y
+posteriormente integremos todo en el branch
+master o principal, así evitamos duplicado 
+de código y sólo tenemos en un branch el
+código funcional
+
+Gracias.
 
