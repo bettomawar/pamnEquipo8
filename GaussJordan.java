@@ -16,10 +16,14 @@
 */
 
 public class GaussJordan extends Gauss{
+	//Constructor
+	public GaussJordan(int n){
+		super(n);
+	}
 
 	//Métodos
 	@Override
-	public float getX(){
+	public float getX(){ //Sobreescribimos el método
 		int i,j,k;
 
 		for (i = 0; i < A.length; i++) {
