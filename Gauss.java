@@ -10,7 +10,7 @@
 *			 -> Trejo Juárez César Alberto
 *			 -> Hernández Cuecuecha Jorge Alberto
 *			 -> Servín Lucario Verónica Valeria
-*			 -> José Alberto
+*			 -> 
 *
 *
 */
