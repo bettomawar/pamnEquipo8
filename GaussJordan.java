@@ -7,7 +7,7 @@
 /**
 *	@author: Equipo8
 *
-*			 -> Trejo Juárez César Alberto
+*			 -> Trejo Juárez César Alberto______________cesaralberto at yandex.com or cesaratj27 at gmail.com
 *			 -> Hernández Cuecuecha Jorge Alberto
 *			 -> Servín Lucario Verónica Valeria
 *			 -> José Alberto
