@@ -7,7 +7,7 @@
 /**
 *	@author: Equipo8
 *
-*			 -> Trejo Juárez César Alberto___________________cesaralberto at yandex.com or cesaratj27 at gmail.com
+*			 -> Trejo Juárez César Alberto
 *			 -> Hernández Cuecuecha Jorge Alberto
 *			 -> Servín Lucario Verónica Valeria
 *			 -> José Alberto
@@ -41,7 +41,7 @@ public class Gauss{
 		Scanner teclado = new Scanner(System.in);
 		int i;
 
-		System.out.println("Ingresar matriz B.");
+		System.out.println("\n-->Ingresar matriz B.");
 		for (i = 0; i < B.length ; i++) {
 			System.out.print("Elemento [" + i + "]: ");
 			B[i] = teclado.nextInt();
@@ -57,7 +57,7 @@ public class Gauss{
 		Scanner teclado = new Scanner(System.in);
 		int i,j;
 
-		System.out.println("Ingresar matriz A.");
+		System.out.println("\n-->Ingresar matriz A.");
 		for (i = 0; i < A.length ; i++) {
 			for (j = 0; j < A.length; j++) {
 				System.out.print("Elemento [" + i + "][" + j + "]: ");
@@ -71,17 +71,18 @@ public class Gauss{
 	*	@return: float 
 	*	@param: nothing
 	*/
-	public float getX(){
+	public float[] getX(){
 		int i,j,k;
+		float []x = new float [A.length];
 
 		for (i = 0; i < A.length; i++) {
 			//Asegurar la inexistencia de 0's en diagonal principal
 			if (A[i][i] == 0) {
-				System.out.println("Exists 0 in diagonal");
-				return -1;
+				System.out.println(">>>Exists 0 in diagonal<<<");
+				break;
+				// falta intercambiar renglones
 			}
 			//
-
 			//Normalizamos el primer renglón
 			cte = A[i][i];
 			for (j = 0;j < A.length ; j++) {
@@ -89,7 +90,6 @@ public class Gauss{
 			}
 			B[i] = B[i] / cte;
 			//Fin normalizar
-
 			//Eliminación gaussiana
 			for (j = i + 1; j < A.length ; j++) {
 				cte = A[j][i] / A[i][i];
@@ -98,17 +98,16 @@ public class Gauss{
 				}
 				B[j] = B[j] - cte * B[i];
 			}
-
-			//mostrar solución
-			System.out.println("Solutions: ");
-			for (i = 0; i < A.length; i++) {
-				for (j = 0; j < A.length ; j++) {
-					System.out.print(A[i][j] + "\t");
-				}
-				System.out.println("|" + B[i]);
-			}
 		}
-		return 0;
+		//almacenar en X las soluciones
+		for (i = 0; i < A.length; i++) {
+			for (j = 0; j < A.length ; j++) {
+				System.out.print(A[i][j] + "\t");
+			} 
+			x[i]= B[i];
+			System.out.println("|" + B[i]);
+		}
+		return x;
 	}
 
 }
