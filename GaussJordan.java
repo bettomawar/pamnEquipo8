@@ -20,7 +20,7 @@ public class GaussJordan extends Gauss{
 	public GaussJordan(int n){
 		super(n);
 	}
-	/*
+	
 	//Métodos
 	@Override  //Sobreescribimos el método
 	public float[] getX(){
@@ -30,7 +30,7 @@ public class GaussJordan extends Gauss{
 			//Asegurar la inexistencia de 0's en diagonal principal
 			if (A[i][i] == 0) {
 				System.out.println(">>>Exists 0 in diagonal<<<");
-				break; //falta intercambiar renglones
+				break;
 			}
 			//
 			//Normalizamos el primer renglón
@@ -60,5 +60,4 @@ public class GaussJordan extends Gauss{
 		//Fin eliminación inversa
 		return B;
 	}
-	*/
 }
