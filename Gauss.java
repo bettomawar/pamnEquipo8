@@ -80,7 +80,7 @@ public class Gauss{
 			if (A[i][i] == 0) {
 				System.out.println(">>>Exists 0 in diagonal<<<");
 				break;
-				// falta intercambiar renglones
+				
 			}
 			//
 			//Normalizamos el primer renglón
@@ -100,12 +100,13 @@ public class Gauss{
 			}
 		}
 		//almacenar en X las soluciones
-		for (i = 0; i < A.length; i++) {
-			for (j = 0; j < A.length ; j++) {
-				System.out.print(A[i][j] + "\t");
-			} 
-			x[i]= B[i];
-			System.out.println("|" + B[i]);
+		x[A.length-1] = B[A.length-1];
+		float cte = B[A.length-1];
+		for (i = A.length - 2; i >= 0; i--) {
+			x[i] = B[i];
+			for (j = A.length - 1; j > i ; j--) {	
+				x[i] = x[i] - A[i][j] * cte;
+			}
 		}
 		return x;
 	}
