@@ -20,6 +20,7 @@ public class GaussJordan extends Gauss{
 	public GaussJordan(int n){
 		super(n);
 	}
+	/*
 	//Métodos
 	@Override  //Sobreescribimos el método
 	public float[] getX(){
@@ -59,4 +60,5 @@ public class GaussJordan extends Gauss{
 		//Fin eliminación inversa
 		return B;
 	}
+	*/
 }
