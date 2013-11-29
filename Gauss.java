@@ -24,12 +24,14 @@ public class Gauss{
 	public float []B;
 	public	float cte;
 	public int orden;
+	public float []x;
 
 	//Constructor
 	public Gauss(int n){
 		this.A = new float [n][n];
 		this.B = new float [n];
 		this.orden = n;
+		this.x = new float [n];
 	}
 
 	//Metodos
@@ -69,12 +71,11 @@ public class Gauss{
 	}
 
 	/** Metodo para obtener soluciones al sistema
-	*	@return: float 
+	*	@return: float[] 
 	*	@param: nothing
 	*/
 	public float[] getX(){
 		int i,j,k;
-		float []x = new float [orden];
 		float temp[] = new float [orden];
 		float tm = 0;
 
@@ -130,21 +131,20 @@ public class Gauss{
 			//Eliminación gaussiana
 			for (j = i + 1; j < orden ; j++) {
 				cte = A[j][i] / A[i][i];
-				for (k = i; k < orden; k++) {
+				for (k = i; k < orden; k++) {					
 					A[j][k] = A[j][k] - cte * A[i][k];
 				}
 				B[j] = B[j] - cte * B[i];
 			}
 		}
 		//almacenar en X las soluciones
-		x[orden-1] = B[orden-1];
-		float cte = B[orden-1];
-		for (i = orden - 2; i >= 0; i--) {
+		for (i = orden - 1; i >= 0; i--) {
 			x[i] = B[i];
 			for (j = orden - 1; j > i ; j--) {	
-				x[i] = x[i] - A[i][j] * cte;
+				x[i] = x[i] - (A[i][j] * x[j]);
 			}
 		}
+
 		return x;
 	}
 }
