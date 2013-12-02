@@ -10,7 +10,8 @@
 *			 -> Trejo Juárez César Alberto
 *			 -> Hernández Cuecuecha Jorge Alberto
 *			 -> Servín Lucario Verónica Valeria
-*			 -> José Alberto
+*			 -> José Alberto Martínez Lara
+*			 -> Fajardo Álvarez Samuel
 *
 *
 */
@@ -36,7 +37,8 @@ public class Gauss{
 
 	//Metodos
 
-	/** Metodo para establecer matriz B
+	/** 
+	*	Metodo para establecer matriz B
 	*	@return: void 
 	*	@param: matrix
 	*/
@@ -52,7 +54,8 @@ public class Gauss{
 		}
 	}
 
-	/** Metodo para establecer matriz A
+	/** 
+	*	Metodo para establecer matriz A
 	*	@return: void 
 	*	@param: matrix
 	*/
@@ -70,7 +73,8 @@ public class Gauss{
 		}
 	}
 
-	/** Metodo para obtener soluciones al sistema
+	/** 
+	*	Metodo para obtener soluciones al sistema
 	*	@return: float[] 
 	*	@param: nothing
 	*/
