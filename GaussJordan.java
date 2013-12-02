@@ -2,6 +2,7 @@
 *	GaussJordan.java
 *	Created on 22 November 2013, 11:13 hrs.
 *	A simple class wich uses Gauss-Jordan method.
+*	@see Gauss.java
 */
 
 /**
@@ -10,7 +11,8 @@
 *			 -> Trejo Juárez César Alberto
 *			 -> Hernández Cuecuecha Jorge Alberto
 *			 -> Servín Lucario Verónica Valeria
-*			 -> José Alberto
+*			 -> José Alberto Martínez Lara
+*			 -> Fajardo Álvarez Samuel
 *
 *
 */
@@ -96,6 +98,5 @@ public class GaussJordan extends Gauss{
 			}
 		//Fin eliminación inversa
 		return B;
-	}
-	
+	}	
 }
