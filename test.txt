@@ -1,7 +1,10 @@
 Hola compañeros
 
-En este repositorio deben de registrarse
-para poder modificar y actualizar códigos.
+En este repositorio deben de registrarse,
+posteriormente deben darme sus nombres de
+usuarios para darlos de alta como colabora-
+dores para poder modificar y actualizar los
+códigos.
 Después de ello, cada uno debe generar un
 branch dónde dice: branch master
 Esto con la finalidad de que cada uno
