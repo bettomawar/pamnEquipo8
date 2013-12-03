@@ -6,18 +6,21 @@
 *
 *	Universidad Nacional Autónoma de México
 *	Programación Avanzada y Métodos Numéricos
-*
+*	Facultad de Ingeniería
+*	Semestre: 2014-1
 *	Profesor: Honorato Saavedra Hernández	
 */
 
 /**
 *	@author: Equipo8
 *
-*			 -> Trejo Juárez César Alberto
+*			 -> Trejo Juárez César Alberto		contact:   cesaralberto@yandex.com / cesaratj27@gmail.com
 *			 -> Hernández Cuecuecha Jorge Alberto
 *			 -> Servín Lucario Verónica Valeria
-*			 -> José Alberto Martínez Lara
+*			 -> Martínez Lara José Alberto
 *			 -> Fajardo Álvarez Samuel
+*			 -> Sebastian Cuatepotzo
+*
 */
 
 public class LU extends Gauss{
