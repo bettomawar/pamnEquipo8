@@ -4,6 +4,12 @@
 *	A simple class wich find roots of a function
 *	by bissection method.
 *	@see Funcion.java
+*
+*	Universidad Nacional Autónoma de México
+*	Programación Avanzada y Métodos Numéricos
+*	Facultad de Ingeniería
+*	Semestre: 2014-1
+*	Profesor: Honorato Saavedra Hernández
 */
 
 /**	
@@ -18,13 +24,13 @@
 */
 public class Biseccionador{
 	//propiedades	
-	float limitea;
-	float limiteb;
-	float tolerancia;
+	double limitea;
+	double limiteb;
+	double tolerancia;
 	Funcion f;
 
 	//Constructor
-	public Biseccionador(float limitea, float limiteb,Funcion f){
+	public Biseccionador(double limitea, double limiteb,Funcion f){
 		this.limitea=limitea;
 		this.limiteb=limiteb;
 		this.f=f;	
@@ -37,8 +43,8 @@ public class Biseccionador{
 	*	@return: real as a root
 	*	@param:	real
 	*/
-	public double calcular(float tolerancia){
-		float c;
+	public double calcular(double tolerancia){
+		double c;
 
 		do{
 		    c = (limitea + limiteb) / 2;
@@ -47,7 +53,7 @@ public class Biseccionador{
 		    }else{
 		    	limitea=  c;
 		    }
-		}while(Math.abs (this.f.f(limitea-limiteb))  >=tolerancia && this.f.f(c)!=0);
+		}while(Math.abs (this.f.f(limitea-limiteb))  >= tolerancia && this.f.f(c) != 0);
 
 		return c;
 	}	

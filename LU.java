@@ -3,6 +3,11 @@
 *	Created on 22 November 2013, 11:13 hrs.
 *	A simple class wich uses LU method.
 *	@see Gauss.java
+*
+*	Universidad Nacional Autónoma de México
+*	Programación Avanzada y Métodos Numéricos
+*
+*	Profesor: Honorato Saavedra Hernández	
 */
 
 /**

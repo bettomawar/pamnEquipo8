@@ -3,6 +3,12 @@
 *	Created on 2 December 2013, 12:32 hrs.
 *	A simple class wich find roots of a function
 *	@see Funcion.java
+*
+*	Universidad Nacional Autónoma de México
+*	Programación Avanzada y Métodos Numéricos
+*	Facultad de Ingeniería
+*	Semestre: 2014-1
+*	Profesor: Honorato Saavedra Hernández
 */
 
 /**	

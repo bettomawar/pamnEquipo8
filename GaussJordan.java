@@ -2,7 +2,13 @@
 *	GaussJordan.java
 *	Created on 22 November 2013, 11:13 hrs.
 *	A simple class wich uses Gauss-Jordan method.
-*	@see Gauss.java
+*	@see Gauss.java 
+*
+*	Universidad Nacional Autónoma de México
+*	Programación Avanzada y Métodos Numéricos
+*	Facultad de Ingeniería
+*	Semestre: 2014-1
+*	Profesor: Honorato Saavedra Hernández
 */
 
 /**
@@ -25,13 +31,13 @@ public class GaussJordan extends Gauss{
 	
 	//Métodos
 	@Override  //Sobreescribimos el método
-	public float[] getX(){
+	public double[] getX(){
 		int i,j,k;
-		float temp[] = new float [orden];
-		float tm = 0;
+		double temp[] = new double [orden];
+		double tm = 0;
 
 		//mostrar matriz ingresada...-----------------
-		System.out.println("\n-->Your matrix: ");
+		System.out.println("-->Your matrix: ");
 		for (int m = 0; m < orden; m++) {
 			for (int n = 0; n < orden; n++) {
 				System.out.print(A[m][n] + "\t");

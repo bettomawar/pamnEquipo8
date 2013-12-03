@@ -4,6 +4,11 @@
 *	A simple class wich defines a function to pass
 *	it to a Biseccionador and NewtonRaphson
 *	
+*	Universidad Nacional Autónoma de México
+*	Programación Avanzada y Métodos Numéricos
+*	Facultad de Ingeniería
+*	Semestre: 2014-1
+*	Profesor: Honorato Saavedra Hernández
 */
 
 /**	

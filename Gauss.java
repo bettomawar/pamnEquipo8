@@ -2,6 +2,12 @@
 *	Gauss.java
 *	Created on 22 November 2013, 08:32 hrs.
 *	A simple class wich uses Gauss method.
+*
+*	Universidad Nacional Autónoma de México
+*	Programación Avanzada y Métodos Numéricos
+*	Facultad de Ingeniería
+*	Semestre: 2014-1
+*	Profesor: Honorato Saavedra Hernández
 */
 
 /**
@@ -21,18 +27,18 @@ import java.util.Scanner;
 public class Gauss{
 
 	//Propiedades
-	public float [][]A;
-	public float []B;
-	public	float cte;
+	public double [][]A;
+	public double []B;
+	public	double cte;
 	public int orden;
-	public float []x;
+	public double []x;
 
 	//Constructor
 	public Gauss(int n){
-		this.A = new float [n][n];
-		this.B = new float [n];
+		this.A = new double [n][n];
+		this.B = new double [n];
 		this.orden = n;
-		this.x = new float [n];
+		this.x = new double [n];
 	}
 
 	//Metodos
@@ -42,16 +48,21 @@ public class Gauss{
 	*	@return: void 
 	*	@param: matrix
 	*/
-	public void setB(float []B){
+	public void setB(double []sols){
 		//leer matriz B
+		System.arraycopy(sols, 0, this.B, 0, orden);
+		
+		/*
+		//-+-Para leer datos ingresados por el usuario-+-//
 		Scanner teclado = new Scanner(System.in);
 		int i;
 
 		System.out.println("\n-->Ingresar matriz B.");
 		for (i = 0; i < orden ; i++) {
 			System.out.print("Elemento [" + i + "]: ");
-			B[i] = teclado.nextFloat();
+			B[i] = teclado.nextdouble();
 		}
+		*/
 	}
 
 	/** 
@@ -59,8 +70,12 @@ public class Gauss{
 	*	@return: void 
 	*	@param: matrix
 	*/
-	public void setA(float [][]A){
+	public void setA(double [][]eq){
 		//leer matriz A
+		System.arraycopy(eq, 0, this.A, 0, orden);
+
+		/*
+		//-+-Para leer datos ingresados por el usuario-+-//
 		Scanner teclado = new Scanner(System.in);
 		int i,j;
 
@@ -68,20 +83,21 @@ public class Gauss{
 		for (i = 0; i < orden ; i++) {
 			for (j = 0; j < orden; j++) {
 				System.out.print("Elemento [" + i + "][" + j + "]: ");
-				A[i][j] = teclado.nextFloat();
+				A[i][j] = teclado.nextdouble();
 			}
 		}
+		*/
 	}
 
 	/** 
 	*	Metodo para obtener soluciones al sistema
-	*	@return: float[] 
+	*	@return: double[] 
 	*	@param: nothing
 	*/
-	public float[] getX(){
+	public double[] getX(){
 		int i,j,k;
-		float temp[] = new float [orden];
-		float tm = 0;
+		double temp[] = new double [orden];
+		double tm = 0;
 
 		//mostrar matriz ingresada...-----------------
 		System.out.println("\n-->Your matrix: ");
@@ -149,6 +165,6 @@ public class Gauss{
 			}
 		}
 
-		return x;
+		return x; //regresamos soluciones
 	}
 }
