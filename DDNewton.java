@@ -14,12 +14,12 @@
 /**
 *	@author: Equipo8
 *
-*			 -> Trejo Juárez César Alberto		contact:   cesaralberto@yandex.com / cesaratj27@gmail.com
-*			 -> Hernández Cuecuecha Jorge Alberto
-*			 -> Servín Lucario Verónica Valeria
-*			 -> Martínez Lara José Alberto
-*			 -> Fajardo Álvarez Samuel
-*			 -> Sebastian Cuatepotzo
+*			 -> Trejo Juárez César Alberto				contact:   cesaralberto@yandex.com / cesaratj27@gmail.com
+*			 -> Hernández Cuecuecha Jorge Alberto		contact:   fig_jorg10_7@hotmail.com
+*			 -> Servín Lucario Verónica Valeria			contact:   vili_servin@hotmail.com
+*			 -> Martínez Lara José Alberto				contact:   betto_ma_war.h@hotmail
+*			 -> Fajardo Álvarez Samuel					contact:   samfajalv@gmail.com
+*			 -> Sebastian Cuatepotzo					contact:   sstsacm@gmail.com
 *
 */
 
